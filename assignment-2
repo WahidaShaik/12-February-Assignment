@@ -1,0 +1,50 @@
+dp=28
+bg=150
+gb=350
+hhp=500
+oils=90
+cname=input("Enter customer name:")
+cphno=int(input("Phone number:"))
+dpq=int(input("no.of Diary products:"))
+bgq=int(input("no.of Backed goods:"))
+gbq=int(input("no.of Grains & bread:"))
+hhpq=int(input("no.of household products:"))
+oilsq=int(input("no.of oil packets:"))
+bill=(dp*dpq)+(bg*bgq)+(gb*gbq)+(hhp*hhpq)+(oils*oilsq)
+print("total bill:",bill)
+if bill>5000:
+    disc=bill*10/100
+elif bill>3000:
+    disc=bill*8/100
+    tax=bill*10/100
+elif bill>2000:
+    disc=bill*5/100
+elif bill>1000:
+    disc=bill*3/100
+else:
+    tax=bill*18/100
+    print("tax:",tax)
+print("discount:",disc)
+
+
+Output:
+Enter customer name:
+Wahida
+Phone number:
+9182736450
+no.of Diary products:
+10
+no.of Backed goods:
+9
+no.of Grains & bread:
+12
+no.of household products:
+15
+no.of oil packets:
+5
+total bill: 13780
+discount: 1378.0
+
+
+** Process exited - Return Code: 0 **
+Press Enter to exit terminal
